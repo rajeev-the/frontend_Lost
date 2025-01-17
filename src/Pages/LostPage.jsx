@@ -9,6 +9,7 @@ const LostPage = () => {
     const {id} = useParams();
     const [Data,setData] = useState();
     const[Comments,setComments] = useState("");
+    const Navigate = useNavigate()
 
     useEffect(() => {
       
@@ -35,6 +36,7 @@ const LostPage = () => {
                 comments:[...(Data.comments || []), Comments]
             });
             setComments("");
+            Navigate("/")
         
         } catch (error) {
             console.error(error);
