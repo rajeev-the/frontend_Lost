@@ -36,7 +36,7 @@ const LostPage = () => {
                 comments:[...(Data.comments || []), Comments]
             });
             setComments("");
-            Navigate("/")
+            
         
         } catch (error) {
             console.error(error);
