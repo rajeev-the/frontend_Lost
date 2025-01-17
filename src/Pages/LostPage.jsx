@@ -34,7 +34,7 @@ const LostPage = () => {
                 comments:[...(Data.comments || []), Comments]
             });
             setComments("");
-            window.location.reload(false);
+        
         } catch (error) {
             console.error(error);
         }
