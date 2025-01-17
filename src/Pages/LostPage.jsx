@@ -29,15 +29,14 @@ const LostPage = () => {
     }, [id])
     
 
-    const submitHandle= async(e)=>{
+   const submitHandle= async(e)=>{
         e.preventDefault();
         try {
             const response = await axios.patch(`https://lostfounded1.pythonanywhere.com/api/data/${Data.id}/`, {
                 comments:[...(Data.comments || []), Comments]
             });
             setComments("");
-            
-        
+            window.location.reload(false);
         } catch (error) {
             console.error(error);
         }
