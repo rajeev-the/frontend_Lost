@@ -37,7 +37,8 @@ const LostPage = () => {
             });
             setComments("");
             if(response){
-            window.location.reload();
+                Navigate('/')
+            
             }
         } catch (error) {
             console.error(error);
