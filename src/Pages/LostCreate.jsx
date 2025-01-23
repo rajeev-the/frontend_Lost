@@ -34,7 +34,7 @@ const LostCreate = () => {
                 setDescription("")
                 setFile(null)
                 setName("")
-                Navigate('/')
+                Navigate('\')
                 
                
             } catch (error) {
